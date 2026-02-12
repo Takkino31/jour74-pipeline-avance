@@ -1,0 +1,22 @@
+{
+  "name": "jour74-pipeline-avance",
+  "version": "1.0.0",
+  "description": "Multi-stage pipeline demo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/ test/",
+    "build": "echo 'Building application...' && mkdir -p dist && cp -r src/* dist/",
+    "package": "tar -czf app.tar.gz dist/"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.3.0",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
